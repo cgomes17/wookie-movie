@@ -1,0 +1,16 @@
+{
+  "name": "movies-list",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/movies/list/src",
+  "projectType": "library",
+  "tags": ["feature", "movies"],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/movies/list/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
